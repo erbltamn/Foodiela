@@ -20,6 +20,7 @@ const Ingredients = () => {
       <h3 className="w-[144px] h-[29px] text-[#000] font-inter text-[24px] font-semibold tracking-[-0.96px] mt-[48px]">
         For main dish
       </h3>
+      <h3>Hello</h3>
       {/* 
       <div className="mt-4 space-y-2">
         {ingredients.map((item, index) => (
