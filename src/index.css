@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "SF Pro Text", sans-serif;
+  --third-family: "Lobster", sans-serif;
+  --font3: "Eudoxus Sans", sans-serif;
+}
+
+@font-face {
+  font-family: var(--font-family);
+  src: url("/public/fonts/Inter/Inter24pt-Regular.woff2") format(woff2),
+    url("/public/fonts/Inter/Inter24pt-Medium.woff2") format(woff2),
+    url("/public/fonts/Inter/Inter24pt-SemiBold.woff2") format(woff2),
+    url("/public/fonts/Inter/Inter24pt-Bold.woff2") format(woff2),
+    url("/public/fonts/Inter/Inter24pt-MediumItalic.woff2") format(woff2);
+  font-weight: 400, 500, 600, 700, 500; /* Adjust for appropriate weights */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--second-family);
+  src: url("/public/fonts/SFProText/SFProText-Regular.woff2") format(woff2),
+    url("/public/fonts/SFProText/SFProText-Semibold.woff2") format(woff2);
+  font-weight: 400, 600; /* Regular and Semibold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--third-family);
+  src: url("/public/fonts/Lobster/Lobster-Regular.woff2") format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font3);
+  src: url("/public/fonts/Eudoxus/EudoxusSans-Medium.woff2") format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer base {
+  .font-inter {
+    font-family: var(--font-family);
+  }
+}
+
+@layer second {
+  .font-sf {
+    font-family: var(--second-family);
+  }
+}
+
+@layer font3 {
+  .font3 {
+    font-family: var(--font3);
+  }
+}
+
+@layer utilities {
+  .font-lobster {
+    font-family: "Lobster", sans-serif;
+    font-size: 24px;
+  }
+}
+
